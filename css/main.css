@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: Georgia;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #bd027d;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+h2 {
+  font-family: "PT Sans Narrow";
+  color: #323232;
+  padding-left: 1rem;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  text-decoration: none;
+  background-color: #bd027d;
+  padding: .8rem;
+  margin: .5rem;
+  color: #fff;
+  border: 2px solid #960062;
+  border-radius: 6px;
+  font-family: "PT Sans Narrow";
+  font-variant: ;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 100%;
+}
+
+section li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+  background-color: #ccc;
+  margin: 1.5rem;
+  gap: 1rem;
+  border: 2px solid #afafaf;
+  border-radius: 6px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  background-color: #bebebe;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding: 1rem;
+  color: #323232;
+  font-size: 1.1258rem;
+}
+
+h3 {
+  font-family: "PT Sans Narrow";
+  font-size: 1.25rem;
+  background-color: #bebebe;
+  padding: 1.125rem;
+  order: 1;
+
+}
+
+div strong {
+  font-style: italic;
+  text-align: right;
+  order: 1;
+}
+
+div {
+  order: -3;
+  justify-content: flex-end;
+  display: flex;
+}
+
+div img {
+  width: 1.5rem;
+}
