@@ -68,6 +68,11 @@ li a {
   justify-content: space-between;
 }
 
+nav a:hover {
+  background-color: #eccee2;
+  color: #323232;
+}
+
 img {
   width: 100%;
   display: block;
@@ -154,6 +159,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: solid #ccc 2px;
 }
 
 footer > a {
