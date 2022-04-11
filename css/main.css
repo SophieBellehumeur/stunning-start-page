@@ -117,3 +117,17 @@ div img {
   width: 1.5rem;
   margin-right: .5em;
 }
+
+footer {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer > a {
+  color: #323232;
+}
+
+footer > p {
+  color: #323232;
+}
