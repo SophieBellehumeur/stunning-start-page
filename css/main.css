@@ -78,12 +78,18 @@ section ul {
   grid-template-columns: 1fr 1fr;
   list-style-type: none;
   padding: 0;
+  gap: 1rem;
+  margin: 0;
+}
+
+section li > img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
 
 section li {
   background-color: #ccc;
-  margin: 1.5rem;
-  gap: 1rem;
+  margin: 0;
   border: 2px solid #afafaf;
   border-radius: 6px;
   display: grid;
@@ -94,10 +100,14 @@ section li {
     "bottom";
 }
 
+section {
+  padding: 1.5rem 0;
+}
+
 main {
   background-color: #bebebe;
   margin: 0;
-  padding: 0;
+  padding: 0 1rem;
 }
 
 main > p {
@@ -110,9 +120,10 @@ h3 {
   grid-area: bottom;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 1.25rem;
-  background-color: #bebebe;
+  background-color: rgba(0, 0, 0, .1);
   padding: 1.125rem;
-  order: 1;
+  text-align: center;
+  z-index: 1;
 }
 
 div strong {
@@ -125,19 +136,13 @@ div strong {
 
 div {
   grid-area: top;
-  justify-content: flex-end;
   display: flex;
-  padding: .5em;
-  background-color: #bebebe;
-  margin-bottom: .5em;
-  margin-top: .5em;
-  margin-left: 0;
-  margin-left: 20rem;
+  justify-self: end;
+  align-items: center;
+  padding: 0 .5em;
+  margin: .5em 0 0;
+  background-color: rgba(0, 0, 0, .1);
   border-radius: 1em 0 0 1em;
-}
-
-h3 + img {
-  grid-area: middle;
 }
 
 div img {
